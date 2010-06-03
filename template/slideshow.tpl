@@ -1,3 +1,7 @@
+{html_head}
+<link rel="stylesheet" type="text/css" href="themes/kardon/slideshow.css">
+{/html_head}
+
 <div id="imageHeaderBar">
   <div class="browsePath">
     {if isset($U_SLIDESHOW_STOP) }
