@@ -39,6 +39,19 @@ legend {
 } /*}}}*/
 
 
+.pwg-icon {
+	background-image: url(icon/icons_sprite.png);
+}
+
+#imageToolBar .pwg-button {
+  width:28px;
+}
+
+A:hover .pwg-icon {
+	background-image: url(icon/icons_sprite_hover.png);
+}
+
+
 /*{{{  Entête */
 #theHeader {
 	color: white;
