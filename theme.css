@@ -25,11 +25,13 @@ select, input, textarea {
 legend {
 	color: gray;
 }
-#content {
+#theCategoryPage .content {
 	margin-left: 260px;
+}
+
+#content {
 	padding: 40px 10px 10px;
 	zoom:1;
-
 }
 
 #copyright {
