@@ -1,7 +1,7 @@
 <?php
 /*
 Theme Name: Kardon
-Version: 2.1.b
+Version: auto
 Description: Sand style
 Theme URI: http://piwigo.org/ext/extension_view.php?eid=399
 Author: galain
