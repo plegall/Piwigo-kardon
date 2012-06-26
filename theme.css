@@ -53,6 +53,19 @@ A:hover .pwg-icon {
 	background-image: url(icon/icons_sprite_hover.png);
 }
 
+.switchBox {
+  background-image: url(images/fond_diapo.png);
+  color:#ccc;
+}
+
+.switchBoxTitle, #languageSwitchBox .switchBoxTitle {border-color:#606060 !important;}
+
+.switchBox a, #languageSwitchBox a {color:#ddd !important;}
+.switchBox a:hover {color:#fff}
+
+#languageSwitchBox {
+  border: none !important;
+}
 
 /*{{{  Entête */
 #theHeader {
@@ -119,10 +132,8 @@ div.content div.titrePage {
 	color: gray;
 }
 body .content div.titrePage  ul.categoryActions {
-	float: none;
-	position: absolute;
-	right: 10px;
-	top: 46px;
+	float: right;
+	margin-top: -40px;
 	padding: 0;
 }
 
@@ -190,10 +201,10 @@ html>body .rateButtonStarEmpty {
 #imageHeaderBar h2 {
 	padding: 0;
 	position: absolute;
-	margin: 32px 0 0;
+        top:80px;
 	width: 100%;
 	color:#76634E;
-	z-index: 4;
+	z-index: -10;
 	clear: none;
 	left: 0;
 }
@@ -204,12 +215,21 @@ html>body .rateButtonStarEmpty {
 }
 #imageToolBar
 {
-	position: relative;
+	/* position: relative; */
 	z-index: 5;
 	margin: 0;
 }
 div#imageToolBar a {
 	width: 28px;
+}
+
+#imageToolBar .imageNumber {
+  margin-top:-30px;
+}
+
+#imageToolBar .actionButtons {
+  margin-left: 10px;
+  z-index:20;
 }
 
 /*}}}*/
@@ -278,3 +298,4 @@ html>/**/body #menubar dd, x:-moz-any-link, x:default {
 /*}}}*/
 
 
+#thePicturePage #content {padding:0;}

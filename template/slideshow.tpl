@@ -1,9 +1,12 @@
+{assign var='size' value=$current.selected_derivative->get_size()}
+
+
 {combine_css path="themes/kardon/slideshow.css"}
 
 {footer_script require="jquery"}{literal}
 jQuery(document).ready(function() {
   var maxWidth = maxHeight  = margin =  0;
-  var finalW = w = {/literal}{$WIDTH_IMG}{literal}, finalH = h = {/literal}{$HEIGHT_IMG}{literal};
+  var finalW = w = {/literal}{$size[0]}{literal}, finalH = h = {/literal}{$size[1]}{literal};
   if (typeof( window.innerWidth ) == 'number') {
     // Non-IE
     maxWidth = window.innerWidth;
@@ -45,7 +48,7 @@ jQuery(document).ready(function() {
     margin =  Math.round((maxHeight-finalH) / 2)
   }
 
-  jQuery("#theImage").append('<img style="margin-top:'+margin+'px; width:'+finalW+'px;height:'+finalH+'px" src="{/literal}{$SRC_IMG}{literal}" alt="">');
+  jQuery("#theImage").append('<img style="margin-top:'+margin+'px; width:'+finalW+'px;height:'+finalH+'px" src="{/literal}{$current.selected_derivative->get_url()}{literal}" alt="">');
 });
 {/literal}{/footer_script}
 
@@ -68,7 +71,7 @@ jQuery(document).ready(function() {
 <div id="theImage">
 <noscript>
   <div>
-    <img src="{$SRC_IMG}" style="width:{$WIDTH_IMG}px;height:{$HEIGHT_IMG}px;" alt="{$ALT_IMG}">
+    <img src="{$current.selected_derivative->get_url()}" {$current.selected_derivative->get_size_htm()} alt="{$ALT_IMG}">
   </div>
 </noscript>
 </div> <!-- theImage -->
