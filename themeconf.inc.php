@@ -12,5 +12,9 @@ $themeconf = array(
   'parent'                 => 'default',
   'icon_dir'               => 'themes/kardon/icon',
   'load_parent_local_head' => false,
+  'colorscheme'            => 'clear',
 );
+
+$conf['language_switch_display_as'] = 'listbox';
+
 ?>
